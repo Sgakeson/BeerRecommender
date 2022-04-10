@@ -14283,6 +14283,11 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="GitHub-URL:-https://github.com/Sgakeson/BeerRecommender">GitHub URL: <a href="https://github.com/Sgakeson/BeerRecommender">https://github.com/Sgakeson/BeerRecommender</a><a class="anchor-link" href="#GitHub-URL:-https://github.com/Sgakeson/BeerRecommender">&#182;</a></h1>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Introduction:">Introduction:<a class="anchor-link" href="#Introduction:">&#182;</a></h1><p>Suggesting the right beer for someone is always an intellectually difficult affair. It is, frankly, impossible to stay objective in the process. So when emotion dominates our decisions, it may be better to delegate the decision making to a recommender system. Especially given that recommender system may likely have a deeper pool to make recomendations from thanks to the fine folks at BeerAdvocates making their review data public.</p>
 <h2 id="Goal:">Goal:<a class="anchor-link" href="#Goal:">&#182;</a></h2><p>To produce a recommender system that can predict the score of beers for a user based on their review history.</p>
 <h2 id="Data-Sources:">Data Sources:<a class="anchor-link" href="#Data-Sources:">&#182;</a></h2><p>This project will rely on two sources of data, the first a set of over 1.5 million reviews, the second a data set attempting to provide numeric measures of various beer qualitites with Natural Language Processing approach to deciphering beer reviews.
@@ -16555,8 +16560,8 @@ Collaborative system RMSE: 0.7287641368618639
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h1><p>The residual mean squared errors of the three different methods indicate that the collabarative method is the best of the three options. The conclusion we can draw from this is that the content based predictions are systematically worse than the collaborative predictions. By taking the average of the two, we are diluting the predictive power of the content based recommender system.
-Thus for this particular data set, with no other adjustments or tuning, the Collaborative system on its own would be the most useful system.</p>
+<h1 id="Discussion-and-Conclusion">Discussion and Conclusion<a class="anchor-link" href="#Discussion-and-Conclusion">&#182;</a></h1><p>The residual mean squared errors of the three different methods indicate that the collabarative method is the best of the three options. The conclusion we can draw from this is that the content based predictions are systematically worse than the collaborative predictions. By taking the average of the two, we are diluting the predictive power of the content based recommender system.
+Thus for this particular data set, with no other adjustments or tuning, the Collaborative system on its own would be the most useful system. However a RMSE of 0.7287 is not particularily great on a scale of 1-5. Further refinement may be warranted to try and devise a system for choosing which recommender system is going to be better for a given prediction. Such as using content based predictions for users with less than 2 previous reviews.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
